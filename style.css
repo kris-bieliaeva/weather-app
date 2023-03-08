@@ -75,6 +75,11 @@ body {
   font-weight: 300;
 }
 
+.search-container input::placeholder {
+  color: white;
+  letter-spacing: 0.05em;
+}
+
 .search-container input:focus {
   border-color: white;
 }
@@ -82,5 +87,73 @@ body {
 .search-container button {
   background-color: #fff;
   color: #477cf0;
-  border-radius: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+#result h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  margin: 1.25em 0;
+}
+
+.weather,
+.desc {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+.weather {
+  margin-top: -0.7em;
+}
+
+#result img {
+  margin: 0.6em 0 0.6em 0;
+  width: 5.2em;
+  filter: drop-shadow(0 1.8em 3.7em rgba(3, 46, 87, 0.2));
+}
+
+#result h1 {
+  font-size: 4em;
+  margin: 0.3em 0 0.7em 0;
+  line-height: 0;
+  font-weight: 400;
+  color: white;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: center;
+}
+
+.temp-container div {
+  padding: 0.3em 1em;
+}
+
+.temp-container div:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.temp-container .title {
+  font-weight: 600;
+  color: white;
+}
+
+.temp-container .temp {
+  font-weight: 300;
+  color: white;
+}
+
+.msg {
+  margin-top: 1.8em;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
